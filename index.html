@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- Fav Icons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Boxi icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swipper css -->
+    <link rel="stylesheet" href="./CSS/swiper-bundle.min.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    /> -->
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- NORMALISE CSS -->
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <title>My Portfolio</title>
+
+    <!-- Boxi icons -->
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo">Feeq</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active_link">
+                <i class="uil uil-home nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">
+                <i class="uil uil-suitcase nav__icon"></i>Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>contact
+              </a>
+            </li>
+          </ul>
+
+          <i class="uil uil-times nav__icon nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- theme change btn -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-home nav__icon"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HOME SECTION -->
+      <section
+        class="home section"
+        data-aos="fade-right"
+        data-aos-duration="3000"
+        id="home"
+      >
+        <div class="home__container container grid">
+          <div class="home__content container grid">
+            <div class="home__social">
+              <a href="https://twitter.com/FeeqCodes" class="home__social-icon">
+                <i class="uil uil-twitter"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@mohhcodes?lang=en"
+                class="home__social-icon"
+              >
+                <i class="bx bxl-tiktok"></i>
+              </a>
+              <a href="https://github.com/FeeqCodes" class="home__social-icon">
+                <i class="uil uil-github"></i>
+              </a>
+
+              <!-- HD-ICONS
+              <a href="" class="home__social-icon nav__icon-hd">
+                <img src="./images/whatsapp.png" alt="" />
+              </a>
+              <a href="" class="home__social-icon nav__icon-hd">
+                <img src="./images/twitter.png" alt="" />
+              </a>
+              <a href="" class="home__social-icon nav__icon-hd">
+                <img src="./images/github (2).png" alt="" />
+              </a>
+              <a href="" class="home__social-icon nav__icon-hd">
+                <img src="./images/instagram.png" alt="" />
+              </a> -->
+            </div>
+
+            <div class="home__image">
+              <div class="blob"></div>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">
+                <i class="uil uil-subject skills__icon"></i>Hi, I'm Feeq
+              </h1>
+              <h3 class="home__subtitle">A Creative Web Developer/Designer</h3>
+              <p class="home__description">
+                I'm a visionary web magician, crafting captivating digital
+                <b>experiences</b> that dance with creativity.Armed with the
+                enchanting tools of <b>Webflow</b> and <b>FIgma</b>
+              </p>
+              <a href="#contact" class="button button--flex">
+                Talk To me <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-direction home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===============ABOUT SECTION================== -->
+      <section
+        class="about about__container section"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+        id="about"
+      >
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">Introduction</span>
+
+        <div class="about__container container grid">
+          <img
+            src="./images/main-image.jpeg"
+            alt=""
+            class="about__img"
+          />
+
+          <div class="about__data">
+            <p class="about__description">
+              Web developer and designer with vast knowledge of modern design
+              implimentations, I am the bridge between you and your ideas. Let
+              me help bring them to life
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">03+</span>
+                <span class="about__info-name">Years <br />Experience</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">10+</span>
+                <span class="about__info-name">Completed <br />Peojects</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">1+</span>
+                <span class="about__info-name">Agencies <br />Worked</span>
+              </div>
+            </div>
+
+            <div class="about__button">
+              <a href="" class="button button--flex"
+                >DOwnload Resume
+                <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section
+        class="skills section"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="3000"
+        id="skills"
+      >
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My Stacks</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!-- Skill 1 -->
+            <div class="skills__content">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div class="">
+                  <h1 class="skills__title">Frontend Developer</h1>
+                  <div class="skills__subtitle">
+                    With More Than 3 years
+                    <span class="experience">Experience</span>
+                  </div>
+                </div>
+
+                <i></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">HTML</h3>
+                    <!-- <span class="skills__number">90%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__html"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">CSS</h3>
+                    <!-- <span class="skills__number">80%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__css"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <!-- <span class="skills__number">60%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__js"> </span>
+                  </div>
+                </div>
+
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">React / Next.js</h3>
+                    <!-- <span class="skills__number">60%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__react"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <!-- <span class="skills__number">75%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__bs"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">Three.js / R3F</h3>
+                    <!-- <span class="skills__number">75%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__3js"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">Webflow</h3>
+                    <!-- <span class="skills__number">75%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__webflow"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">Figma</h3>
+                    <!-- <span class="skills__number">75%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__figma"> </span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__title">
+                    <h3 class="skills__name">Web3</h3>
+                    <!-- <span class="skills__number">75%</span> -->
+                  </div>
+                  <div class="skills__bar">
+                    <span class="span skills__percent skills__web3"> </span>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section
+        class="services section"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        id="services"
+      >
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">What I offer</span>
+
+        <div class="services__container container grid">
+          <!-- SERVICES 1 -->
+          <div class="services__content">
+            <div>
+              <!-- <i class="services__icon"></i> -->
+              <h3 class="services__title">Web Design/Development</h3>
+              <i class="uil uil-brackets-curly skills__icon"></i>
+            </div>
+
+            <span
+              class="button button-flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Web designer/Developer</h4>
+                <i
+                  class="uil uil-times services__modal-close"
+                  id="nav-close"
+                ></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I build and develop websites</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I Develop User Interface</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I implent 3D Designs</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I bring ideas to life</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services__content">
+            <div>
+              <h3 class="services__title">Tutorial</h3>
+              <i class="uil uil-backpack skills__icon"></i>
+            </div>
+
+            <span
+              class="button button-flex button--small button--link services__button"
+            >
+              View More
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <h4 class="services__modal-title">Tutorial Services</h4>
+                <i
+                  class="uil uil-times services__modal-close"
+                  id="nav-close"
+                ></i>
+
+                <ul class="services__modal-services grid">
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I teach people How to code</p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I make video Tutorials</p>
+                  </li>
+                  <!-- ===================== I DONT KNOW WHAT TO WRITE====================== -->
+                  <!-- <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I </p>
+                  </li>
+                  <li class="services__modal-service">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>I bring ideas to life</p>
+                  </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section
+        class="portfolio section"
+        data-aos="zoom-in-right"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-sine"
+        id="portfolio"
+      >
+        <h2 class="section__title">PortFolio</h2>
+        <span class="section__subtitle">My Projects </span>
+
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Portfolio 0 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./images/pele.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Tribute to pele</h3>
+                <p class="portfolio__description">
+                  Dedicated to the Greatest of All time
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://pele-one.vercel.app/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Portfolio 1 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/mohcodes screen.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Domain Website</h3>
+                <p class="portfolio__description">
+                  A responsive website for a domain service provider
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://mohhcodes.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 2 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/Screenshot 2022-10-24 104821.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">3D Immersive Experience</h3>
+                <p class="portfolio__description">
+                  <!-- Currently in development stage -->
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://3d-xperience.vercel.app"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 3 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/Screenshot 2023-02-06 145620.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Pizza wallet</h3>
+                <p class="portfolio__description">
+                  A responsive website for pizza wallet
+                </p>
+                <a
+                  href="https://pizzawall.netlify.app/#"
+                  class="button button--flex button--small portfolio__button"
+                  target="blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 4 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/Screenshot 2022-11-16 142525.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Pizza wallet Lightpaper</h3>
+                <p class="portfolio__description">
+                  A responsive website for pizza wallet Lightpaper
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://docs.pizzawallet.io/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 5 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/webflow-portfolio.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Webflow Portfolio</h3>
+                <p class="portfolio__description">
+                  Redesigned portfolio website using webflow
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://my-portfolio-11b600.webflow.io/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- portfolio 6 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="./images/car-sale.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Car Sale Website</h3>
+                <p class="portfolio__description">
+                  A website to showcase car collections
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://car-leasing-website.webflow.io/"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Portfolio 7 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/revolt.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Revolt AI</h3>
+                <p class="portfolio__description">
+                  A responsive webflow design
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://mohhcodes.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Portfolio 8 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="./images/fashion.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                  <h3 class="portfolio__title">Fashion Website</h3>
+                  <p class="portfolio__description">
+                    A responsive webflow design
+                  </p>
+            
+                <a
+                  rel="noopener"
+                  href="https://mohhcodes.netlify.app"
+                  class="button button--flex button--small portfolio__button"
+                  target="_blank"
+                >
+                  Visit<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+          <!-- SwIPPER ARROws -->
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+
+          <!-- Swipper pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- PROJECT SECTION -->
+      <section
+        class="project section"
+        data-aos="fade-left"
+        data-aos-duration="5000"
+      >
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">
+                Do you have a new <span class="project__span">project</span>?
+              </h2>
+              <p class="project__description">
+                Contact Me now and get your project completed at an affordable
+                rate
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Talk to me
+                <i class="uil uil-envelope project__icon button__icon"></i>
+              </a>
+              <div>
+                <img
+                  class="project__img"
+                  src="./images/lady-employee-working-in-office.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Leave A Message</h2>
+        <span class="section__subtitle">Get in Touch</span>
+
+        <form
+          action="https://formspree.io/f/mnqrjdjz"
+          data-netlify="true"
+          method="post"
+          name="contact-me"
+          class="contact__form container grid"
+        >
+          <div class="contact__inputs grid">
+            <div class="contact__content">
+              <label for="text" class="contact__label">Name</label>
+              <input placeholder="Enter your name" name="text" type="text" class="contact__input" />
+            </div>
+            <div class="contact__content">
+              <label for="email" class="contact__label">Email</label>
+              <input placeholder="Enter your Email" name="email" type="email" class="contact__input" />
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="text" class="contact__label">Subject</label>
+            <input placeholder="Enter a Subject" name="subject" type="text" class="contact__input" />
+          </div>
+          <div class="contact__content">
+            <label for="" class="contact__label">Message</label>
+            <textarea
+              placeholder="Enter your Message"
+              name="message"
+              id=""
+              cols="0"
+              rows="7"
+              class="contact__input"
+            ></textarea>
+          </div>
+
+          <div>
+            <button class="button button--flex" type="submit">
+              Send Message <i class="uil uil-message button__icon"></i>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__bg">
+          <div class="footer__container container grid">
+            <div>
+              <h2 class="footer__title">Feeq</h2>
+              <span class="footer__subtitle">Frontend Developer</span>
+            </div>
+
+            <ul class="footer__link">
+              <li>
+                <i class="uil uil-arrow-right footer__icons"></i>
+                <a href="#home" class="footer__links">Home</a>
+              </li>
+              <li>
+                <i class="uil uil-arrow-right footer__icons"></i>
+                <a href="#services" class="footer__links">Services</a>
+              </li>
+              <li>
+                <i class="uil uil-arrow-right footer__icons"></i>
+                <a href="#portfolio" class="footer__links">Portfolio</a>
+              </li>
+              <li>
+                <i class="uil uil-arrow-right footer__icons"></i>
+                <a href="#about" class="footer__links">About</a>
+              </li>
+              <li>
+                <i class="uil uil-arrow-right footer__icons"></i>
+                <a href="#contact" class="footer__links">Contact</a>
+              </li>
+            </ul>
+
+            <div class="footer__socials">
+              <a href="" target="_blank" class="footer__socials">
+                <i class="uil uil-twitter"></i>
+              </a>
+              <a href="" target="_blank" class="footer__socials">
+                <i class="uil uil-github"></i>
+              </a>
+              <a href="" target="_blank" class="footer__socials">
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          <p class="footer__copy">
+            &#169; Feeq. All right reserved. <span>2022</span>
+          </p>
+        </div>
+      </footer>
+      <!-- Footer ENds -->
+
+      <!-- Scroll top -->
+      <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+      </a>
+    </main>
+    <!-- MAIN ENDS -->
+
+    <!-- JS -->
+
+    <!-- Aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- SWIPPER JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!-- Swiper JS BUNDLE -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
